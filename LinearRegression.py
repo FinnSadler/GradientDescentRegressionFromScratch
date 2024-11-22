@@ -46,8 +46,6 @@ def GradientDescent(x, y, learningRate = 0.000001, iterations = 3000): #Fit grad
 
 b0, b1, costs = GradientDescent(x, y) #Run gradient descent with the beta coefficients for the regression
 
-check = input("Do you want to predict a value?: ")
-
 #Visualise the cost function
 plt.plot(costs) 
 plt.xlabel("Iteration")
@@ -66,6 +64,8 @@ plt.xlabel('X Axis')
 plt.ylabel('Y Axis')
 plt.title('Result - Scatter Plot with Regression Line')
 plt.show()
+
+check = input("Do you want to predict a value?: ")
 
 #User interface allowing for custom inputs
 while check == "Yes":
